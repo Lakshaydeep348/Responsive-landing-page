@@ -1,0 +1,183 @@
+/**
+* !General styling
+**/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    border: 1px solid black;
+    background-color: #f1f1f1;
+}
+
+
+.navbar {
+    width: 100%;
+}
+
+.slide {
+    width: 100%;
+}
+
+.container1 {
+
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+h5 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.card {
+    margin-top: 2vh;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10vh;
+}
+
+
+/**
+* !flexbox
+**/
+
+.custom {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10vh 0vw;
+    text-align: center;
+    gap: 5px;
+    /* overflow: hidden; */
+
+
+}
+
+.flex {
+    width: 30%;
+    height: 30%;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+
+}
+
+.flex img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+/**
+* !Grid
+**/
+
+.gallery {
+    width: 100%;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+.items {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#box1 {
+    grid-row: span 2/auto;
+}
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    background-size: cover;
+    gap: 5px;
+
+}
+.one,.two
+{
+    width: 50%;
+    border: 1px solid black;
+}
+.one img,.two img
+{
+    width: 100%;
+
+}
+
+.box4 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#box5 {
+    grid-column: span 2/auto;
+    background-position: center;
+}
+
+
+/**
+* !Responsive
+**/
+
+
+@media screen and (max-width: 850px) {
+
+    .custom {
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .flex {
+        margin: 10px 0;
+        width: 40%;
+        height: 40%;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .custom {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .flex {
+        width: 100%;
+
+    }
+
+    .flex img {
+        width: 100%;
+    }
+
+}
